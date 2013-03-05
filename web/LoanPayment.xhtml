@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Loan Monthly Payment</title>
+        <script src="ajax.js"></script>
+    </head>
+    <body onload="getXMLHttpRequest();">
+        <div>
+            <h2>Monthly Loan Payment Computation</h2>
+<!--            <form method="POST" action="" name="LoanPayment" id="LoanPayment"> -->
+            <form method="POST" action="financial/loanpayment" name="LoanPayment" id="LoanPayment">
+                <table>
+                    <tr>
+                        <td>Principal:</td>
+                        <td><input type="text" name="principal" id="principal" size="12"/></td>
+                    </tr>
+                    <tr>
+                        <td>Number of years:</td>
+                        <td><input type="text" name="numberOfYears" id="numberOfYears" size="5"/></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate:</td>
+                        <td><input type="text" name="interestRate" id="interestRate" size="5"/></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Payments per year:</td>
+                        <td><input type='text' size='5' name='paymentsPerYear' id="paymentsPerYear" value='12'/></td>
+                    </tr>
+                    <tr>
+<!--                        <td></td><td><input type='button' value='Compute' onclick="makeRequest('POST', document.forms[0]);"/></td> -->
+                        <td></td><td><input type='submit' value='Compute'/></td>
+                    </tr>
+                </table>
+                <div id="amount">
+                    Monthly Payment:
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

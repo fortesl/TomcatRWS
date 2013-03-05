@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Loan Remaining Balance</title>
+        <script src="ajax.js"></script>
+    </head>
+    <body onload="getXMLHttpRequest();">
+        <div>
+            <h2>Loan Remaining Balance Computation</h2>
+            <form method="POST" action="#" id="RemainingBalance" name="RemainingBalance">
+                <table>
+                    <tr>
+                        <td>Original Principal:</td>
+                        <td><input type="text" name="principal" id="principal" size="12"/></td>
+                    </tr>
+                    <tr>
+                        <td>Monthly Payment:</td>
+                        <td><input type="text" name="monthlyPayment" id="monthlyPayment" size="12"/></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate:</td>
+                        <td><input type="text" name="interestRate" id="interestRate" size="5"/></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Payments Made:</td>
+                        <td><input type='text' size='6' name='paymentsMade' id="paymentsMade"/></td>
+                    </tr>
+                    <tr>
+                        <td></td><td><input type='button' value='Compute' onclick="makeRequest('POST', document.forms[0]);"/></td>
+                    </tr>
+                </table>
+                <div id="amount">
+                    Remaining Balance:
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
