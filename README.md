@@ -4,6 +4,9 @@ Financial Computation WebServices
 Web services of various well known financial computations. Mainly intended for use by application developers for integration with any application or platform which support online web services.
 
 
+<b>Author</b>: <a href="https://twitter.com/fortesl">fortesl</a>
+
+
 <b>Base URI</b>: https://jas-fortes.rhcloud.com/ws/financial/
 
 
@@ -16,7 +19,7 @@ Web services of various well known financial computations. Mainly intended for u
 <b>Content-Type produced</b>: All services return a text/plain currency value. example: 123.15
 
 
-Hosted by: RedHat OpenShift
+<b>Hosted by</b>: <a href="https://www.openshift.com/">RedHat OpenShift</a>
 
 
 
